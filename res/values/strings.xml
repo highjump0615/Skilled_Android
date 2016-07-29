@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Skilled</string>
+
+    <string name="parse_app_id">f8qAhmS35GfGPxwfj6ZDJ9Ja1lWb5WIsCI5DknaG</string>
+    <string name="parse_client_key">uHnEmW0sl39WTmEQyeC7ZYRQB0cd3QT452Jl7Buw</string>
+
+    <string name="facebook_app_id">1419571834966221</string>
+    <string name="twitter_consumer_key">TR2ciit4QSlUQuPIKOXjvJ3Np</string>
+    <string name="twitter_consumer_secret">TBMcSaMYTooUtnd5mYGBRrWZujctCpmCB6tBSsCQF8PsNFoitC</string>
+    
+    <!-- splash activity -->
+    <string name="splash_text">EXPRESS YOURSELF</string>
+    
+    <!-- landing activity -->
+    <string name="landing_welcome_text">WELCOME TO SKILL\'D</string>
+    <string name="landing_or_text">OR</string>
+    <string name="landing_never_text">WE WILL NEVER POST ANYTHING WITHOUT PERMISSION!</string>
+    <string name="landing_social_text">We highly recommend using Facebook and Twitter, so you can socialize with your friend!</string>
+    
+    <!-- sign up activity -->
+    <string name="sign_up_text">Sign Up</string>
+    <string name="email">E-mail address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    
+    <!--  content description -->
+    <string name="cd_logo">Logo Image</string>
+    <string name="cd_back">Back Image</string>
+    <string name="sign_in_text">Login</string>
+    
+    <!-- forgotten password activity -->
+    <string name="forgotten_password">Forgotten Password</string>
+
+    <string-array name="select_media_items">
+        <item>Take A Photo</item>
+        <item>Record A Video</item>
+        <item>Media From Library</item>
+    </string-array>
+
+    <!-- HomeActivity -->
+    <string name="skilled">Skill\'d</string>
+    <string name="search_for_contents">Search for contents</string>
+    <string name="no_comments_yet">No comments yet</string>
+    <string name="home">Home</string>
+
+    <!-- CommentActivity -->
+    <string name="comments">Comments</string>
+    <string name="send">Send</string>
+    <string name="no_comment">NO COMMENT</string>
+    <string name="write_your_comment">Write your comment</string>
+
+    <!-- FavoriteActivity -->
+    <string name="my_favourites">My Favourites</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="tag_category_search">Category Search ListView</string>
+
+    <!-- PostActivity -->
+    <string name="post">Post</string>
+    <string name="title">Title</string>
+    <string name="write_your_text_here">Write your text here</string>
+    <string name="choose_category">Choose A Category</string>
+    <string name="uploading">Uploading…</string>
+
+    <!-- NotificationActivity -->
+    <string name="notifications">Notifications</string>
+    <string name="following">Following</string>
+    <string name="likes">Likes</string>
+    <string name="mentions">Mentions</string>
+
+    <!-- ProfileActivity -->
+    <string name="profile">Profile</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="settings">Settings</string>
+
+    <!-- EditProfileActivity -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="about_me">About me…</string>
+    <string name="fullname">Fullname</string>
+    <string name="location">Location</string>
+    <string name="set_profile_background">Set Profile Background</string>
+    <string name="change_password">Change Password</string>
+
+    <!-- ChangePasswordActivity -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_password">Retype Password</string>
+
+    <!-- SettingsActivity -->
+    <string name="push_notifications">Push Notifications</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="rate_us">Rate us on Google Play Store</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="faq">FAQs</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirmation_content">Do you really want to clear all cache data?</string>
+
+    <!-- FFmpeg command -->
+    <string name="commandText">ffmpeg -y -i <xliff:g id="src">%s</xliff:g> -strict experimental <xliff:g id="mode">%s</xliff:g>-s <xliff:g id="width">%d</xliff:g>x<xliff:g id="height">%d</xliff:g> -metadata:s:v rotate=0 -r 30 -ab 44100 -ac 2 -ar 22050 -b 2097k <xliff:g id="dest">%s</xliff:g></string>
+
+</resources>

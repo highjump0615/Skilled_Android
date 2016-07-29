@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search_category"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_layout_search_category_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout_search_bar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edit_search"
+            style="@style/SearchLayout.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/search_edit_search_margin"
+            android:paddingLeft="@dimen/search_edit_search_paddingLeft"
+            android:paddingRight="@dimen/search_edit_search_paddingLeft"/>
+
+        <ImageView
+            android:id="@+id/image_search_icon"
+            android:layout_width="@dimen/search_image_search_icon_size"
+            android:layout_height="@dimen/search_image_search_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/search_image_search_icon_leftMargin"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageView
+            android:id="@+id/image_cancel_icon"
+            android:layout_width="@dimen/search_image_cancel_icon_size"
+            android:layout_height="@dimen/search_image_cancel_icon_size"
+            android:layout_alignRight="@+id/edit_search"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/search_image_cancel_icon_padding"
+            android:src="@drawable/round_stop" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_all"
+        android:layout_width="@dimen/search_button_all_width"
+        android:layout_height="@dimen/search_button_all_height"
+        android:layout_marginRight="@dimen/search_button_all_rightMargin"
+        android:background="@drawable/btn_all_bg" />
+
+</LinearLayout>

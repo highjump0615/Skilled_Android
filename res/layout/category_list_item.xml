@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_list_item">
+
+    <View
+        android:id="@+id/layout_selected_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_category_item"
+        android:layout_alignBottom="@+id/layout_category_item" />
+
+    <LinearLayout
+        android:id="@+id/layout_category_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/search_list_item_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_category_name_margin_left"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/search_category_name_text_size" />
+
+        <ImageView
+            android:id="@+id/image_check"
+            android:layout_width="@dimen/search_category_check_image_size"
+            android:layout_height="@dimen/search_category_check_image_size"
+            android:layout_marginBottom="@dimen/search_category_check_margin_top"
+            android:layout_marginLeft="@dimen/search_category_check_margin_left"
+            android:layout_marginRight="@dimen/search_category_check_margin_left"
+            android:layout_marginTop="@dimen/search_category_check_margin_top"
+            android:adjustViewBounds="true"
+            android:src="@drawable/blue_led_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>

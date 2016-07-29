@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical">
+
+    <Button
+        android:id="@+id/search_button_cancel"
+        style="@style/SearchLayout.Button.Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/cancel"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        style="@style/SearchLayout.Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/search_edit_margin"
+        android:layout_toLeftOf="@id/search_button_cancel"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <FrameLayout
+        android:id="@+id/search_activation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</merge>

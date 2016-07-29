@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comment_item_height"
+    android:background="@color/list_item_back"
+    android:paddingLeft="@dimen/comment_item_padding"
+    android:paddingRight="@dimen/comment_item_padding">
+
+    <com.parse.ParseImageView
+        android:id="@+id/image_photo"
+        android:layout_width="@dimen/comment_item_image_size"
+        android:layout_height="@dimen/comment_item_image_size"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile_photo_default" />
+
+    <com.iliayugai.skilled.widget.Emojicon.EmojiconButton
+        android:id="@+id/button_name"
+        android:layout_width="@dimen/comment_item_text_name_width"
+        android:layout_height="@dimen/comment_item_text_name_height"
+        android:layout_marginLeft="@dimen/comment_item_text_name_margin_left"
+        android:layout_marginTop="@dimen/comment_item_text_name_margin_top"
+        android:background="@android:color/transparent"
+        android:ellipsize="middle"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@color/transparent_button_color"
+        android:textSize="@dimen/comment_item_text_name_text_size" />
+
+    <com.iliayugai.skilled.widget.Emojicon.EmojiconTextView
+        android:id="@+id/text_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/button_name"
+        android:layout_alignRight="@+id/text_comment_time"
+        android:layout_marginBottom="@dimen/comment_item_text_comment_margin_bottom"
+        android:layout_marginTop="@dimen/comment_item_text_comment_margin_top"
+        android:minLines="1"
+        android:gravity="center_vertical"
+        android:text="Comment"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/comment_item_text_comment_text_size" />
+
+    <TextView
+        android:id="@+id/text_comment_time"
+        android:layout_width="@dimen/comment_item_text_comment_time_width"
+        android:layout_height="@dimen/comment_item_text_comment_time_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button_name"
+        android:gravity="end"
+        android:text="Time"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/comment_item_text_comment_time_text_size" />
+
+</RelativeLayout>

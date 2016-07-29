@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- header bar -->
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signup_activity_back_size">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/signup_activity_back_size"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cd_back"
+            android:padding="@dimen/signup_activity_back_padding"
+            android:src="@drawable/btn_back_bg" />
+
+        <TextView
+            android:id="@+id/text_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/sign_up_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_activity_header_font_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="@dimen/splash_image_logo_width"
+            android:layout_height="@dimen/splash_image_logo_width"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cd_logo"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/layout_edit"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/signup_activity_edit_height"
+            android:layout_marginTop="@dimen/signup_activity_logo_gap"
+            android:background="@drawable/signup_text_back"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/signup_activity_edit_padding">
+
+            <EditText
+                android:id="@+id/edt_email"
+                style="@style/MyEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/signup_activity_header_font_size" />
+
+            <EditText
+                android:id="@+id/edt_username"
+                style="@style/MyEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/username"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:textSize="@dimen/signup_activity_header_font_size" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/MyEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/signup_activity_header_font_size" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/signup_activity_margin"
+            android:background="@drawable/btn_signup_signup_bg" />
+
+        <ImageView
+            android:id="@+id/btn_to_login"
+            android:layout_width="@dimen/signup_activity_login_but_width"
+            android:layout_height="@dimen/signup_activity_login_but_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/signup_activity_margin"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cd_back"
+            android:src="@drawable/btn_signup_login_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>

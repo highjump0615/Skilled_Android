@@ -1,0 +1,27 @@
+./ffmpeg -v
+?[0;39m?[0m?[0;39m?[0m?[0;39mffmpeg version N-43170-gd84dd35?[0m?[0;39m?[0m?[0;3
+9m?[0m?[0;39m Copyright (c) 2000-2012 the FFmpeg developers?[0m?[0;39m?[0m?[0;39
+m?[0m?[0;39m
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  built on Sep 11 2013 00:48:15 with gcc 4.4.3
+(GCC)
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  configuration: --enable-cross-compile --arch=
+arm --cpu=cortex-a9 --target-os=linux --enable-runtime-cpudetect --prefix=/outpu
+t --enable-pic --disable-shared --enable-static --enable-small --cross-prefix=/h
+ome/smaimon/Downloads/android-ndk-r8e/toolchains/arm-linux-androideabi-4.4.3/pre
+built/linux-x86/bin/arm-linux-androideabi- --sysroot=/home/smaimon/Downloads/and
+roid-ndk-r8e/platforms/android-14/arch-arm --enable-version3 --enable-gpl --enab
+le-memalign-hack --disable-doc --enable-yasm --enable-decoder=mjpeg --enable-dec
+oder=rawvideo --enable-encoder=libx264 --enable-muxer=mp4 --enable-demuxer=image
+2 --enable-demuxer=mjpeg --enable-demuxer=mp4 --enable-demuxer=mov --enable-pars
+er=mjpeg --enable-filter=buffer --enable-filter=buffersink --enable-filter=drawb
+ox --enable-filter=overlay --enable-filter=redact --enable-protocol=file --enabl
+e-hwaccels --enable-ffmpeg --disable-ffplay --disable-ffprobe --disable-ffserver
+ --disable-network --enable-libx264 --enable-zlib --extra-cflags=-I../x264 --ext
+ra-ldflags='-L..?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libavutil      51. 66.100 / 5
+1. 66.100
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libavcodec     54. 48.100 / 54. 48.100
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libavformat    54. 22.100 / 54. 22.100
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libavfilter     3.  5.102 /  3.  5.102
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libswscale      2.  1.100 /  2.  1.100
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libswresample   0. 15.100 /  0. 15.100
+?[0m?[0;39m?[0m?[0;39m?[0m?[0;39m  libpostproc    52.  0.100 / 52.  0.100

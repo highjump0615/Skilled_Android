@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_back">
+
+    <include layout="@layout/layout_nav_title_bar" />
+
+    <com.makeramen.segmented.SegmentedGroup
+        android:id="@+id/segment_type"
+        android:layout_width="@dimen/notify_segment_type_width"
+        android:layout_height="@dimen/notify_segment_type_height"
+        android:layout_below="@+id/layout_title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/notify_segment_type_bottomMargin"
+        android:layout_marginTop="@dimen/notify_segment_type_topMargin"
+        android:checkedButton="@+id/radio_following"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_following"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/following"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/tint_color" />
+
+        <RadioButton
+            android:id="@+id/radio_likes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/likes"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/tint_color" />
+
+        <RadioButton
+            android:id="@+id/radio_comments"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/comments"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/tint_color" />
+
+        <RadioButton
+            android:id="@+id/radio_mentions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/mentions"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/tint_color" />
+
+    </com.makeramen.segmented.SegmentedGroup>
+
+    <!--<ListView-->
+        <!--android:id="@+id/list_follower"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/segment_type" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/segment_type">
+        <LinearLayout
+            android:id="@+id/list_linearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/navigation_bar_back_color"
+            >
+
+            <LinearLayout
+                android:id="@+id/list_follow"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_likes"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_comments"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_mentions"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

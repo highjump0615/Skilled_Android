@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+    
+    <TextView android:id="@+id/license"
+        android:padding="10dip"
+    android:layout_gravity="center_horizontal"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/license" />
+    
+    
+ <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0">
+
+  
+     
+<Button android:id="@+id/startDemoAct"
+	android:text="@string/startDemoAct"
+	android:layout_gravity="center_horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+</Button>    
+
+<TextView android:id="@+id/space1"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+
+<TextView android:id="@+id/space1"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+
+<TextView android:id="@+id/space1"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+
+
+<TextView android:id="@+id/space1"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+
+    
+
+
+
+
+
+<Button android:id="@+id/purchase"
+	android:text="@string/purchase"
+	android:layout_gravity="center_horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+</Button>
+
+<Button android:id="@+id/contactButton"
+	android:text="@string/contactButton"
+	android:layout_gravity="center_horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+</Button>
+
+<Button android:id="@+id/aboutButton"
+	android:text="@string/aboutButton"
+	android:layout_gravity="center_horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+</Button>
+
+</TableLayout>
+
+    
+</LinearLayout>

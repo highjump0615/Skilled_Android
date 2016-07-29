@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_follow_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/post_category"
+    android:paddingBottom="@dimen/follower_layout_follow_item_paddingBottom"
+    android:paddingTop="@dimen/follower_layout_follow_item_paddingTop">
+
+    <com.parse.ParseImageView
+        android:id="@+id/image_photo"
+        android:layout_width="@dimen/follower_image_photo_size"
+        android:layout_height="@dimen/follower_image_photo_size"
+        android:layout_marginLeft="@dimen/follower_image_photo_leftMargin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile_photo_default" />
+
+    <com.iliayugai.skilled.widget.Emojicon.EmojiconTextView
+        android:id="@+id/text_name"
+        android:layout_width="@dimen/follower_text_name_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/follower_text_name_leftMargin"
+        android:ellipsize="middle"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/follower_text_name_font_size" />
+
+</RelativeLayout>

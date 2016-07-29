@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <com.parse.ParseImageView
+                android:id="@+id/image_photo"
+                android:layout_width="@dimen/notify_image_photo_size"
+                android:layout_height="@dimen/notify_image_photo_size"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/notify_image_photo_bottomMargin"
+                android:layout_marginLeft="@dimen/notify_image_photo_leftMargin"
+                android:layout_marginRight="@dimen/notify_image_photo_rightMargin"
+                android:layout_marginTop="@dimen/notify_image_photo_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/profile_photo_default" />
+
+            <com.iliayugai.skilled.widget.Emojicon.EmojiconTextView
+                android:id="@+id/text_notify"
+                android:layout_width="@dimen/notify_text_notify_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/notify_text_notify_topMargin"
+                android:layout_toRightOf="@+id/image_photo"
+                android:ellipsize="middle"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/notify_text_notify_font_size" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="@dimen/notify_text_time_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/notify_text_time_topMargin"
+                android:layout_toRightOf="@+id/image_photo"
+                android:ellipsize="middle"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:text="Time"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/notify_text_time_font_size" />
+
+            <com.parse.ParseImageView
+                android:id="@+id/image_thumbnail"
+                android:layout_width="@dimen/notify_image_thumbnail_size"
+                android:layout_height="@dimen/notify_image_thumbnail_size"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/notification_divider_color"/>
+    </LinearLayout>
+
+
+
+

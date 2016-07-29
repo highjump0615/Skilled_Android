@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView     android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <TextView android:text="@string/show_file_title1" android:id="@+id/showFileTitle1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/h2" android:layout_gravity="center_horizontal"></TextView>
+  <TextView android:text="@string/show_file_title2" android:id="@+id/showFileTitle2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/h1" android:layout_gravity="center_horizontal"></TextView>
+  
+  <TextView android:text=" " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView> 
+  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<Button android:text="Done" android:id="@+id/showFileDone"
+		android:layout_gravity="left|center_horizontal" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></Button>
+
+	<Button android:text="Send to Developer" android:id="@+id/showFileSend"
+		android:layout_gravity="right|center_horizontal" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></Button>
+
+  </LinearLayout>
+  
+  <TextView android:text=" " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView> 
+  
+  
+  <TextView android:text="@string/show_file_text" android:id="@+id/showFiletextView1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/t1" android:layout_gravity="center_horizontal"></TextView>
+  
+  <TextView android:text=" " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView> 
+
+</LinearLayout>
+</ScrollView>

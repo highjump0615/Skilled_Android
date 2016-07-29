@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="background">#1e1e27</color>
+    
+    <!-- landing activity -->
+    <color name="landing_line">#e5e5e6</color>
+    
+    <!-- signup activity -->
+    <color name="signup_placeholder">#c6cacd</color>
+
+    <!-- HomeActivity -->
+    <color name="navigation_bar_back_color">#23232E</color>
+    <color name="list_item_back">#20202A</color>
+    <color name="load_more_back">#19202A</color>
+    <color name="tint_color">#F16161</color>
+    <color name="tint_dark_color">#40F16161</color>
+    <color name="button_text_color">#F6F7F7</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="horizontal_line_color">#313136</color>
+    <color name="blog_item_delimiter_color">#777777</color>
+
+    <!-- Buttons -->
+    <color name="button_title">#FFFFFF</color>
+    <color name="button_title_pressed">#B7B7B7</color>
+    <color name="button_title_shadow">#777777</color>
+    <color name="notification_divider_color">#555555</color>
+
+    <color name="rounded_list_item_bg_color">@android:color/transparent</color>
+    <color name="rounded_list_item_bg_pressed_color">#081C2F</color>
+    <color name="rounded_list_border_color">#EAE6E1</color>
+</resources>

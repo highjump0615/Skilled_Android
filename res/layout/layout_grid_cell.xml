@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.parse.ParseImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="@dimen/profile_grid_cell_size"
+        android:layout_height="@dimen/profile_grid_cell_size"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile_img_default" />
+
+    <ImageView
+        android:id="@+id/image_video_icon"
+        android:layout_width="@dimen/profile_grid_video_icon_size"
+        android:layout_height="@dimen/profile_grid_video_icon_size"
+        android:layout_alignBottom="@+id/image_thumbnail"
+        android:layout_marginBottom="@dimen/profile_grid_video_icon_margin_bottom"
+        android:layout_marginLeft="@dimen/profile_grid_video_icon_margin_left"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile_video_icon" />
+
+</RelativeLayout>

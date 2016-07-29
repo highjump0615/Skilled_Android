@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.parse.ParseImageView
+            android:id="@+id/image_photo"
+            android:layout_width="@dimen/blog_image_photo_size"
+            android:layout_height="@dimen/blog_image_photo_size"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/blog_image_photo_margin"
+            android:adjustViewBounds="true" />
+
+        <com.iliayugai.skilled.widget.Emojicon.EmojiconButton
+            android:id="@+id/button_name"
+            android:layout_width="@dimen/blog_button_name_width"
+            android:layout_height="@dimen/blog_button_name_height"
+            android:layout_marginTop="@dimen/blog_button_name_topMargin"
+            android:layout_toRightOf="@+id/image_photo"
+            android:background="@android:color/transparent"
+            android:ellipsize="middle"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:text="test user"
+            android:textColor="@color/transparent_button_color"
+            android:textSize="@dimen/blog_button_name_font_size" />
+
+        <ImageView
+            android:id="@+id/image_location"
+            android:layout_width="@dimen/blog_image_location_width"
+            android:layout_height="@dimen/blog_image_location_height"
+            android:layout_alignLeft="@+id/button_name"
+            android:layout_marginTop="@dimen/blog_image_location_topMargin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_location_icon" />
+
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="@dimen/blog_text_location_width"
+            android:layout_height="@dimen/blog_text_location_height"
+            android:layout_alignTop="@+id/image_location"
+            android:layout_marginLeft="@dimen/blog_image_photo_margin"
+            android:layout_toRightOf="@+id/image_location"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Beijing, China"
+            android:textColor="@color/tint_color"
+            android:textSize="@dimen/blog_text_location_font_size" />
+
+        <ImageView
+            android:id="@+id/image_clock"
+            android:layout_width="@dimen/blog_image_clock_size"
+            android:layout_height="@dimen/blog_image_clock_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/blog_image_clock_leftMargin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_clock" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="@dimen/blog_text_time_width"
+            android:layout_height="@dimen/blog_text_time_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/blog_text_time_leftMargin"
+            android:layout_toRightOf="@+id/image_clock"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="15 minutes ago"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/blog_text_time_font_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_image_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.iliayugai.skilled.widget.CustomVideoView
+            android:id="@+id/video_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/image_post"
+            android:layout_alignLeft="@+id/image_post"
+            android:layout_alignRight="@+id/image_post"
+            android:layout_alignTop="@+id/image_post"
+            android:background="#0000" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/image_post"
+            android:layout_width="@dimen/blog_image_post_width"
+            android:layout_height="@dimen/blog_image_post_height"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_default_image" />
+
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="@dimen/blog_image_play_size"
+            android:layout_height="@dimen/blog_image_play_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/image_post"
+            android:layout_marginRight="@dimen/blog_image_play_rightMargin"
+            android:layout_marginTop="@dimen/blog_image_play_topMargin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/btn_play_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/blog_layout_post_paddingBottom"
+        android:paddingLeft="@dimen/blog_layout_post_paddingLeft"
+        android:paddingRight="@dimen/blog_layout_post_paddingRight"
+        android:paddingTop="@dimen/blog_layout_post_paddingTop">
+
+        <com.iliayugai.skilled.widget.Emojicon.EmojiconTextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blog_text_title_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/blog_text_title_bottomMargin"
+            android:lines="1"
+            android:text="Gone With Wind"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/blog_text_title_font_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!--android:layout_height="@dimen/blog_text_content_height"-->
+
+        <com.iliayugai.skilled.widget.Emojicon.EmojiconTextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title"
+            android:inputType="textMultiLine"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/blog_text_content_paddingLeft"
+            android:paddingRight="@dimen/blog_text_content_paddingRight"
+            android:scrollbars="vertical"
+            android:tag="scrollable_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/blog_text_content_font_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/blog_layout_like_paddingBottom"
+        android:paddingLeft="@dimen/blog_layout_like_paddingLeft"
+        android:paddingRight="@dimen/blog_layout_like_paddingRight"
+        android:paddingTop="@dimen/blog_layout_like_paddingTop">
+
+        <LinearLayout
+            android:id="@+id/layout_like_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_like_icon"
+                android:layout_width="@dimen/blog_image_like_icon_width"
+                android:layout_height="@dimen/blog_image_like_icon_height"
+                android:adjustViewBounds="true"
+                android:src="@drawable/home_like_icon" />
+
+            <TextView
+                android:id="@+id/text_like"
+                android:layout_width="@dimen/blog_text_like_width"
+                android:layout_height="@dimen/blog_text_like_height"
+                android:layout_marginLeft="@dimen/blog_text_like_leftMargin"
+                android:gravity="center_vertical"
+                android:text="0 likes"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/blog_text_like_font_size" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_category"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/blog_button_category_height"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="[ Category ]"
+            android:textColor="@color/transparent_button_tint_color"
+            android:textSize="@dimen/blog_button_name_font_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/blog_layout_comment_paddingLeft"
+        android:paddingRight="@dimen/blog_layout_comment_paddingRight">
+
+        <ImageView
+            android:id="@+id/image_comment_icon"
+            android:layout_width="@dimen/blog_image_comment_icon_width"
+            android:layout_height="@dimen/blog_image_comment_icon_height"
+            android:adjustViewBounds="true"
+            android:src="@drawable/home_comment" />
+
+        <com.iliayugai.skilled.widget.Emojicon.EmojiconTextView
+            android:id="@+id/text_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blog_text_comment_height"
+            android:layout_marginLeft="@dimen/blog_text_comment_leftMargin"
+            android:layout_toRightOf="@+id/image_comment_icon"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="vertical"
+            android:tag="scrollable_comment"
+            android:text="@string/no_comments_yet"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/blog_text_comment_font_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/blog_layout_buttons_leftMargin"
+        android:paddingRight="@dimen/blog_layout_buttons_rightMargin"
+        android:paddingTop="@dimen/blog_layout_buttons_topMargin">
+
+        <View
+            android:id="@+id/view_h_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/horizontal_line_color" />
+
+        <ImageView
+            android:id="@+id/image_like"
+            android:layout_width="@dimen/blog_image_like_width"
+            android:layout_height="@dimen/blog_image_like_height"
+            android:adjustViewBounds="true"
+            android:src="@drawable/btn_like_bg" />
+
+        <ImageView
+            android:id="@+id/image_comment"
+            android:layout_width="@dimen/blog_image_comment_width"
+            android:layout_height="@dimen/blog_image_comment_height"
+            android:layout_marginLeft="@dimen/blog_image_comment_leftMargin"
+            android:layout_toRightOf="@+id/image_like"
+            android:adjustViewBounds="true"
+            android:src="@drawable/btn_comment_bg" />
+
+        <ImageView
+            android:id="@+id/image_more"
+            android:layout_width="@dimen/blog_image_more_width"
+            android:layout_height="@dimen/blog_image_more_height"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/btn_more_bg" />
+
+    </RelativeLayout>
+
+    <!--    <View
+            android:id="@+id/view_list_delimiter"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blog_item_delimiter_color"
+            android:visibility="gone" />-->
+
+</LinearLayout>

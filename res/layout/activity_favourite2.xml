@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_back"
+    android:orientation="vertical">
+
+    <com.iliayugai.skilled.widget.SearchPanel2
+        android:id="@+id/search_panel"
+        style="@style/SearchLayout" />
+
+    <GridView
+        android:id="@+id/grid_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:columnWidth="@dimen/favourite_item_width"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:tag="@string/tag_category_search" />
+
+</LinearLayout>

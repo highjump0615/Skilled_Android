@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">FFmpeg4Android remote service Management</string>
+    <string name="app_name">FFmpeg4android</string>
+<string name="startButton">Start</string>
+<string name="stopButton">Stop</string>
+<string name="bindButton">Bind</string>
+<string name="releaseButton">Release</string>
+<string name="invokeButton">Invoke</string>
+<string name="getWorkerStatusButton">Get FFmpeg status and output</string>
+<string name="RemoteProcessStatus">Remote Process Status: </string>
+<string name="FfmpegStatus">FFmpeg Status: </string>
+<string name="license">License Type: </string>
+<string name="startDemoAct">Run FFmpeg Commands</string>
+<string name="welcome_demo">FFmpeg4Android Demo Activity shows how every application or service can use FFMpeg.</string>
+<string name="commandTextView">This command will rotate /sdcard/vid.mp4 90 degrees, and create /sdcard/videokit/out.mp4:</string>
+<string name="commandText">ffmpeg -y -i /sdcard/videokit/in.mp4 -strict experimental -vf transpose=1 -s 160x120 -r 30 -aspect 4:3 -ab 48000 -ac 2 -ar 22050 -b 2097k /sdcard/videokit/out.mp4</string>
+<string name="output">FFmpeg output</string>
+
+<string name="about_email_button">Email author</string>
+<string name="about_email_subject">%1$s %2$s</string>
+<string name="about_email_content">Hi</string>
+<string name="about_email_uri">mailto:android@netcompss.com</string>
+<string name="ui_ok">OK</string>
+<string name="aboutButton">About FFmpeg4Android</string>
+<string name="contactButton">Contact us</string>
+<string name="purchase">Add FFmpeg support to your app</string>
+<string name="oem_license">Using OEM License, you will be able to install FFmpeg4Android for all your users.</string>
+<string name="dialog_error_title">Error</string>
+<string name="input_file_contains_spaces_message">Input file %s contains spaces, please rename.</string>
+<string name="output_file_contains_spaces_message">Output file %s contains spaces, please rename.</string>
+<string name="bitrate_invalid_message">Bitrate %s is not valid, should be a number bigger then 4.</string>
+
+<string name="notif_message_ok">Transcoding Finished</string>
+<string name="notif_message_fail">Transcoding failed</string>
+<string name="notif_message_stopping">Stopping Transcoding</string>
+<string name="notif_message_stopped">Transcoding stopped</string>
+<string name="notif_progress_title">Transcoding is running</string>
+<string name="notif_progress_desc">Click to see progress log</string>
+<string name="notif_start_title">FFMpeg4Android</string>
+<string name="notif_start_desc">Click to open</string>
+
+
+<string name="show_file_title1">Last Run Log</string>
+<string name="show_file_title2">Its recommended to send us a video sample in case of failure</string>
+<string name="show_file_text">Log is empty, Log is generated after a compress run.</string>
+<string name="show_logs">Show last run logs</string>
+<string name="trascoding_running_message">Can\'t start new wizard while transcoding is in progress.</string>
+<string name="trascoding_running_background_message">Transcoding is running in the background.</string>
+
+<string name="progress_dialog_title">Converting Status</string>
+<string name="progress_dialog_message">Compressing...\n
+</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_layout_title_bar_height"
+    android:background="@color/navigation_bar_back_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_trend"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/navigation_image_trend_padding"
+        android:src="@drawable/btn_trendhot_bg" />
+
+    <TextView
+        android:id="@+id/text_nav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/image_trend"
+        android:layout_toLeftOf="@+id/image_search"
+        android:gravity="center"
+        android:text="@string/home"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/navigation_text_nav_title_font_size" />
+
+    <ImageView
+        android:id="@+id/image_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/navigation_image_search_padding"
+        android:src="@drawable/btn_search_bg" />
+
+    <EditText
+        android:id="@+id/edit_search"
+        style="@style/mySearchEditTextStyle"
+        android:layout_width="@dimen/navigation_edit_search_width"
+        android:layout_height="@dimen/navigation_edit_search_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/navigation_edit_search_leftMargin"
+        android:ellipsize="end"
+        android:hint="@string/search_for_contents"
+        android:imeOptions="actionSearch"
+        android:inputType="text|textNoSuggestions"
+        android:paddingLeft="@dimen/navigation_edit_search_paddingLeft"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_h_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_view_h_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black" />
+
+</RelativeLayout>

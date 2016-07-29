@@ -1,0 +1,32 @@
+ffmpeg -y -i /sdcard/videokit/m.mkv -s 320x240 -r 30 -aspect 3:4 -ab 48000 -ac 2 -ar 22050 -vcodec mpeg4 -b 2097152 /sdcard/videokit/out.mp4
+old armv7  (m.mkv): 2:49.43
+new armv7  (mo.mkv): 1.54
+new armv7_neon (mo.mkv): 1:47
+
+String[] complexCommand = {"ffmpeg","-y" ,"-i", "/sdcard/videokit/mo.mkv","-strict","experimental", "-vf", "crop=iw/2:ih:0:0,split[tmp],pad=2*iw[left]; [tmp]hflip[right]; [left][right] overlay=W/2", "-vb", "20M", "-r", "23.956", "/sdcard/videokit/out.mp4"};
+new armv7_neon complex (mo.mkv): 13:47
+new armv7 complex (mo.mkv): 14:04
+
+String[] complexCommand = {"ffmpeg","-y", "-i", "/sdcard/videokit/sample.mp4","-strict","experimental", "-aspect", "5:4", "-vf", "split [main][tmp];[tmp] crop=iw/2:ih:0:0, hflip[tp],[tp] pad=2*iw[left]; [main] crop=iw/2:ih:iw/2:0[right]; [left][right] overlay=W/2", "-vb"," 20M","-r", "23.956", "/sdcard/Final_video.mp4"};
+new armv7_neon complex (sample.mp4): 13:47
+
+// 20M -> 1M
+String[] complexCommand = {"ffmpeg","-y", "-i", "/sdcard/videokit/sample.mp4","-strict","experimental", "-aspect", "5:4", "-vf", "split [main][tmp];[tmp] crop=iw/2:ih:0:0, hflip[tp],[tp] pad=2*iw[left]; [main] crop=iw/2:ih:iw/2:0[right]; [left][right] overlay=W/2", "-vb"," 1M","-r", "23.956", "/sdcard/Final_video.mp4"};
+new armv7_neon complex (sample.mp4): 10:40
+
+// disable cpu detect
+new armv7_neon complex (sample.mp4): 20mins
+
+///
+new armv7_neon complex using mp4 codec (sample.mp4): 1min
+/////////////////////////
+// compression 
+commandStr = "ffmpeg -threads 0 -y -i /sdcard/videokit/sample.mp4 -strict experimental 160x120 -aspect 4:3 -r 30 -ab 48000 -ac 2 -ar 22050 -b 2097k -vcodec mpeg4 /sdcard/videokit/out.mp4";
+armv7_neon n7 sample.mp4
+
+new : 44, 43
+new (no threads 0) : 45, 44
+old (vc): 1.31, 1.31, 1.34
+armv7 (no neon): 43, 44
+
+//////////////////////////////////////////////////////// 

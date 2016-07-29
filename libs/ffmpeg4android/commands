@@ -1,0 +1,48 @@
+
+//encode h264 and aac in one command
+ffmpeg -y -i /sdcard/videokit/in.mp4 -strict experimental -vcodec libx264 -crf 24 -acodec aac /sdcard/videokit/out.mkv
+
+// work, convert mp3 to aac
+//ffmpeg -i /sdcard/videokit/in.mp3 /sdcard/videokit/out.m4a
+
+// works on n7
+//String command = "ffmpeg -y -f image2 -i /sdcard/videokit/pic%d.jpg /mnt/sdcard/videokit/video.mpg";
+
+// works on n7 (as always the video is very short)
+String command = "ffmpeg -y -f image2 -i /sdcard/videokit_output/pic%d.jpg -r 0.2 -s 320x240 /mnt/sdcard/videokit/video_images.avi";
+
+// working on n7 (I can see the images changing)
+String command = "ffmpeg -y -f image2 -i /sdcard/vid_snaps/pic%d.jpg -r 0.2 -s 320x240 /mnt/sdcard/videokit/video_images.mp4";
+
+// working perfectly on n7
+String command = "ffmpeg -y -f image2 -r 1 -i /sdcard/videokit_output/pic%03d.jpg -vcodec libx264 -r 30 /sdcard/videokit_output/video_images.mp4";
+
+// not working
+//String command = "ffmpeg -y -i /sdcard/videokit/in.mp4 -vf subtitles=/sdcard/videokit/1.srt /sdcard/videokit/out.mp4";
+
+// not working
+//String command = "ffmpeg -y -i /sdcard/videokit/m.mkv -i /sdcard/videokit/1.srt -scodec copy /sdcard/videokit/out.mp4";
+//String command = "ffmpeg -y -i /sdcard/videokit/in.mp4 /sdcard/videokit/out.mkv";
+
+// not working, missing codec
+//String command = "ffmpeg -y -i /sdcard/videokit/m.mkv -vcodec libx264 -crf 24 /sdcard/videokit/out.mkv";
+
+// works!
+//String command = "ffmpeg -y -i /sdcard/videokit/in.mp4 -vcodec libx264 -crf 24 /sdcard/videokit/out.mkv";
+
+// works, slow
+//String command = "ffmpeg -y -i /sdcard/Video/1.MTS -vcodec libx264 -preset slow -crf 24 /sdcard/videokit/out.mp4";
+
+// works
+//String command = "ffmpeg -y -i /sdcard/Video/1.MTS -vcodec libx264 -preset ultrafast -crf 24 /sdcard/videokit/out.mp4";
+
+// works
+//String command = "ffmpeg -y -i /sdcard/videokit/m.mkv -vcodec libx264 -preset ultrafast -crf 24 -sn /sdcard/videokit/m2.mkv";
+
+// works
+//String command = "ffmpeg -y -i /sdcard/videokit/m2.mkv -i /sdcard/videokit/in.srt -vcodec libx264 -preset ultrafast -crf 24 -scodec copy /sdcard/videokit/mo.mkv";
+
+// works
+//String command = "ffmpeg -y -i /sdcard/videokit/m2.mkv -i /sdcard/videokit/in.srt -scodec copy /sdcard/videokit/outm3.mkv";
+		
+String command = "ffmpeg -y -i /sdcard/InputFile.mp4 -s 320x240 -r 15 -aspect 3:4 -ab 12288 -vcodec mpeg4 -b 2097152 -sample_fmt s16 /sdcard/out.mp4";			

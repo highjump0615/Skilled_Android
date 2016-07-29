@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_more_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/more_layout_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/navigation_bar_back_color"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tint_color"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_more_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:paddingBottom="@dimen/more_button_padding"
+            android:paddingTop="@dimen/more_button_padding"
+            android:src="@drawable/btn_more_facebook_bg" />
+
+        <ImageView
+            android:id="@+id/btn_more_twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:paddingBottom="@dimen/more_button_padding"
+            android:paddingTop="@dimen/more_button_padding"
+            android:src="@drawable/btn_more_twitter_bg" />
+
+        <ImageView
+            android:id="@+id/btn_more_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:paddingBottom="@dimen/more_button_padding"
+            android:paddingTop="@dimen/more_button_padding"
+            android:src="@drawable/btn_more_email_bg" />
+
+        <ImageView
+            android:id="@+id/btn_more_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:paddingBottom="@dimen/more_button_padding"
+            android:paddingTop="@dimen/more_button_padding"
+            android:src="@drawable/btn_more_report_bg" />
+
+        <ImageView
+            android:id="@+id/btn_more_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:paddingBottom="@dimen/more_button_padding"
+            android:paddingTop="@dimen/more_button_padding"
+            android:src="@drawable/btn_more_close_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>
