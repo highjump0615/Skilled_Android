@@ -7,3 +7,5 @@ Text, Photo, Video Sharing app like Instagram
 * Implemented comment, like, follow, @me etc
 * Used Amazon s3 Service for storing video data
 * Used FFMpeg library for playing video 
+
+![screenshot](screenshot.jpg)
