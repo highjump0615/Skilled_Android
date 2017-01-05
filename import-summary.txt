@@ -1,0 +1,144 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From FacebookSDK:
+* build.gradle
+* build.xml
+* facebook.iml
+From Skilled:
+* .DS_Store
+* Readme.md
+* Skilled.iml
+* ic_launcher-web.png
+* proguard-project.txt
+* screenshot.jpg
+From ffmpeg4android_os:
+* .DS_Store
+* benchmarks.txt
+* commands
+* commands2.txt
+* docs/
+* docs/my_comp_version.txt
+* ffmpeg4android.iml
+* release_notes.txt
+From fmmr-library:
+* .DS_Store
+* AndroidManifest.xml
+* LICENSE-2.0.txt
+* build.xml
+* custom_rules.xml
+* fmmr-library.iml
+* jni/
+* jni/Android.mk
+* jni/Application.mk
+* jni/ffmpeg/
+* jni/ffmpeg/Android.mk
+* jni/metadata/
+* jni/metadata/Android.mk
+* jni/metadata/ffmpeg_mediametadataretriever.c
+* jni/metadata/ffmpeg_mediametadataretriever.h
+* jni/metadata/mediametadataretriever.cpp
+* jni/metadata/mediametadataretriever.h
+* jni/metadata/wseemann_media_MediaMetadataRetriever.cpp
+* proguard-project.txt
+* scripts/
+* scripts/build-ffmpeg.sh
+From library:
+* .DS_Store
+* LICENSE
+* PullToRefresh.iml
+* pom.xml
+From segmentedradios:
+* .DS_Store
+* NOTICE.txt
+* README.md
+* default.properties
+* segmentedradiobutton.iml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In FacebookSDK:
+* AndroidManifest.xml => facebookSDK/src/main/AndroidManifest.xml
+* libs/bolts.jar => facebookSDK/libs/bolts.jar
+* res/ => facebookSDK/src/main/res/
+* src/ => facebookSDK/src/main/java/
+In ffmpeg4android_os:
+* AndroidManifest.xml => ffmpeg4android_os/src/main/AndroidManifest.xml
+* assets/ => ffmpeg4android_os/src/main/assets/
+* libs/armeabi-v7a/liblicense-jni.so => ffmpeg4android_os/src/main/jniLibs/armeabi-v7a/liblicense-jni.so
+* libs/armeabi-v7a/libloader-jni.so => ffmpeg4android_os/src/main/jniLibs/armeabi-v7a/libloader-jni.so
+* libs/armeabi-v7a/libvideokit.so => ffmpeg4android_os/src/main/jniLibs/armeabi-v7a/libvideokit.so
+* lint.xml => ffmpeg4android_os/lint.xml
+* res/ => ffmpeg4android_os/src/main/res/
+* src/ => ffmpeg4android_os/src/main/java/
+* src/com/netcompss/ffmpeg4android/IFfmpgefRemoteServiceBridge.aidl => ffmpeg4android_os/src/main/aidl/com/netcompss/ffmpeg4android/IFfmpgefRemoteServiceBridge.aidl
+In fmmr-library:
+* libs/armeabi-v7a/libavcodec.so => fmmrlibrary/src/main/jniLibs/armeabi-v7a/libavcodec.so
+* libs/armeabi-v7a/libavformat.so => fmmrlibrary/src/main/jniLibs/armeabi-v7a/libavformat.so
+* libs/armeabi-v7a/libavutil.so => fmmrlibrary/src/main/jniLibs/armeabi-v7a/libavutil.so
+* libs/armeabi-v7a/libffmpeg_mediametadataretriever_jni.so => fmmrlibrary/src/main/jniLibs/armeabi-v7a/libffmpeg_mediametadataretriever_jni.so
+* libs/armeabi-v7a/libswscale.so => fmmrlibrary/src/main/jniLibs/armeabi-v7a/libswscale.so
+* libs/fmmr.jar => fmmrlibrary/libs/fmmr.jar
+* src/ => fmmrlibrary/src/main/java/
+In library:
+* AndroidManifest.xml => library/src/main/AndroidManifest.xml
+* res/ => library/src/main/res/
+* src/ => library/src/main/java/
+In segmentedradios:
+* AndroidManifest.xml => segmentedradios/src/main/AndroidManifest.xml
+* res/ => segmentedradios/src/main/res/
+* src/ => segmentedradios/src/main/java/
+* src/.DS_Store => segmentedradios/src/main/resources/.DS_Store
+* src/com/makeramen/segmented/.DS_Store => segmentedradios/src/main/resources/com/makeramen/segmented/.DS_Store
+In Skilled:
+* AndroidManifest.xml => skilled/src/main/AndroidManifest.xml
+* assets/ => skilled/src/main/assets/
+* libs/Parse-1.5.0.jar => skilled/libs/Parse-1.5.0.jar
+* res/ => skilled/src/main/res/
+* src/ => skilled/src/main/java/
+* src/com/iliayugai/skilled/widget/TabBar/.DS_Store => skilled/src/main/resources/com/iliayugai/skilled/widget/TabBar/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" 
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    
+    <TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/welcome_demo"
+	/>
+
+  
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+    	<TextView android:id="@+id/CommandTextView"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/commandTextView" />
+			
+    	<EditText android:id="@+id/CommandText" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/commandText" android:singleLine="false"  android:scrollbars="vertical" />
+	
+		<Button android:id="@+id/invokeButton" android:text="@string/invokeButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</Button>
+		
+		<TextView android:id="@+id/del1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text=" " />
+	
+		<Button android:id="@+id/showLastRunLogButton" android:text="Show Last Run Log"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</Button>
+
+		
+    
+  </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
