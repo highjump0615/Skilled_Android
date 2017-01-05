@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Skilled.iml" filepath="$PROJECT_DIR$/Skilled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" filepath="$PROJECT_DIR$/ffmpeg4android_os/ffmpeg4android_os.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/segmentedradios/segmentedradios.iml" filepath="$PROJECT_DIR$/segmentedradios/segmentedradios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skilled/skilled.iml" filepath="$PROJECT_DIR$/skilled/skilled.iml" />
+    </modules>
+  </component>
+</project>
